@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/react-tweets/static/css/main.eef7ae9d.css",
+    "main.js": "/react-tweets/static/js/main.98fcbe88.js",
+    "static/media/tweet-image.png": "/react-tweets/static/media/tweet-image.032662a2a907475127d7.png",
+    "index.html": "/react-tweets/index.html",
+    "main.eef7ae9d.css.map": "/react-tweets/static/css/main.eef7ae9d.css.map",
+    "main.98fcbe88.js.map": "/react-tweets/static/js/main.98fcbe88.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eef7ae9d.css",
+    "static/js/main.98fcbe88.js"
+  ]
+}
