@@ -1,44 +1,29 @@
-import { createSlice } from "@reduxjs/toolkit";
-import { followUser, unfollowUser } from "./operations";
+import { createSlice } from "@reduxjs/toolkit"
+import { persistReducer } from 'redux-persist'
+import storage from 'redux-persist/lib/storage'
 
-const actionsSlice = createSlice({
+export const actionsSlice = createSlice({
     name: 'actions',
     initialState: {
-        followList: [],
-        isUpdating: false,
-        error: null,
+        followList: []
     },
-    extraReducers: {
-
-        [followUser.pending](state) {
-            state.isUpdating = true;
+    reducers: {
+        followUser(state, action) {
+            state.followList.push(action.payload)
         },
-        [followUser.rejected](state, action) {
-            state.isUpdating = false;
-            state.error = action.payload;
-        },
-        [followUser.fulfilled](state, action) {
-            // console.log('after follow: ' + action.payload.followers);
-            const { id } = action.payload;
-            state.isUpdating = false;
-            state.followList.push( { id: id });
-        },
-        [unfollowUser.pending](state) {
-            state.isUpdating = true;
-        },
-        [unfollowUser.rejected](state, action) {
-            state.isUpdating = false;
-            state.error = action.payload;
-        },
-        [unfollowUser.fulfilled](state, action) {
-            // console.log('after unfollow: ' + action.payload.followers);
-            state.isUpdating = false;
-            const index = state.followList.findIndex(
-                user => user.id === action.payload.id
-            );
-            state.followList.splice(index, 1);
+        unfollowUser(state, action) {
+            state.followList = state.followList.filter(item => item.id !== action.payload.id)
         },
     }
-});
+})
 
-export const actionsReducer = actionsSlice.reducer;
+const persistConfig = {
+    key: 'actions',
+    storage,
+}
+
+export const actionsReducer = persistReducer(persistConfig, actionsSlice.reducer);
+
+export const { followUser, unfollowUser } = actionsSlice.actions;
+
+export const selectFollowList = state => state.actions.followList;

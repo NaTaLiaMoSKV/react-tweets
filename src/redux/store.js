@@ -1,6 +1,5 @@
 import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
-import { persistStore, persistReducer, FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER, } from 'redux-persist';
-import storage from 'redux-persist/lib/storage';
+import { persistStore, FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER, } from 'redux-persist';
 
 import { usersReducer } from "./users/slice";
 import { actionsReducer } from "./actions/slice";
@@ -13,16 +12,10 @@ const middleware = [
   }),
 ];
 
-const actionsPersistConfig = {
-    key: 'actions',
-    storage,
-    whitelist:['followList']
-}
-
 export const store = configureStore({
     reducer: {
         users: usersReducer,
-        actions: persistReducer(actionsPersistConfig, actionsReducer),
+        actions: actionsReducer,
     },
     middleware,
     devTools: process.env.NODE_ENV === 'development',

@@ -1,8 +1,9 @@
 .tweets {
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    /* justify-content: center; */
 }
 
 .tweet {
@@ -43,9 +44,6 @@
     width: 80px;
     height: 80px;
     margin-top: 178px;
-    /* margin-left: 150px; */
-    /* left: 150px; */
-    /* top: 178px; */
 
     background: #EBD8FF;
     box-shadow: 0px 4.39163px 4.39163px rgba(0, 0, 0, 0.06), inset 0px -2.19582px 4.39163px #AE7BE3, inset 0px 4.39163px 3.29372px #FBF8FF;
@@ -63,8 +61,6 @@
 .tweet__data {
     margin-top: 26px;
     font-family: 'Montserrat';
-    /* font-style: normal; */
-    /* font-weight: 500; */
     font-size: 20px;
     line-height: 24px;
     text-align: center;
