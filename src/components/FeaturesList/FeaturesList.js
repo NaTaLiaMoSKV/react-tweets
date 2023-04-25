@@ -25,7 +25,3 @@ export default function FeaturesList() {
         </div>
     )
 }
-// Subscribe to user tweets
-// Chat with friends
-// Like posts
-// Get notified about new posts

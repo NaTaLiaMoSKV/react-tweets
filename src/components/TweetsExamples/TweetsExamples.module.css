@@ -1,0 +1,29 @@
+.examples__container {
+    margin-bottom: 80px;
+}
+
+.examples__title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    text-align: center;
+    color: #373737;
+}
+
+.examples__items {
+    margin-top: 10px;
+    width: calc(100% - 50px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.examples__item {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.examples__image{
+    width: 350px;
+    border: 3px solid #5736A3;
+    border-radius: 5px;
+}

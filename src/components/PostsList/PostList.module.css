@@ -1,0 +1,23 @@
+.posts {
+    margin-bottom: 80px;
+}
+
+.posts__title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    text-align: center;
+    color: #373737;
+}
+
+.posts__list {
+    margin: 30px 60px;
+    /* margin-left: 60px; */
+}
+
+.posts__item {
+    list-style-type: decimal;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    font-family: 'Montserrat';
+    color: #373737;
+}
