@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-tweets/static/css/main.dfd3e741.css",
-    "main.js": "/react-tweets/static/js/main.7504deee.js",
+    "main.css": "/react-tweets/static/css/main.ae4ea759.css",
+    "main.js": "/react-tweets/static/js/main.8d34df33.js",
     "static/media/user5.jpg": "/react-tweets/static/media/user5.51eb25405b824c0efa18.jpg",
     "static/media/user6.jpg": "/react-tweets/static/media/user6.95b186c9c77f560dcd38.jpg",
     "static/media/user1.jpg": "/react-tweets/static/media/user1.6b472a0e94a47c5fdbab.jpg",
@@ -19,11 +19,11 @@
     "static/media/user2.jpg": "/react-tweets/static/media/user2.785c2c13ddb521a8fec5.jpg",
     "static/media/user10.jpg": "/react-tweets/static/media/user10.f0fd5afc47a00562a0be.jpg",
     "index.html": "/react-tweets/index.html",
-    "main.dfd3e741.css.map": "/react-tweets/static/css/main.dfd3e741.css.map",
-    "main.7504deee.js.map": "/react-tweets/static/js/main.7504deee.js.map"
+    "main.ae4ea759.css.map": "/react-tweets/static/css/main.ae4ea759.css.map",
+    "main.8d34df33.js.map": "/react-tweets/static/js/main.8d34df33.js.map"
   },
   "entrypoints": [
-    "static/css/main.dfd3e741.css",
-    "static/js/main.7504deee.js"
+    "static/css/main.ae4ea759.css",
+    "static/js/main.8d34df33.js"
   ]
 }
