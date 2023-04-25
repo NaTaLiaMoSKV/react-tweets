@@ -30,6 +30,14 @@
     top: 28px;
     left: 36px;
 }
+
+.tweet__userImage {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+
+}
+
 .rect {
     width: 380px;
     height: 8px;

@@ -47,7 +47,7 @@ export default function TweetCard() {
                         
                         <div className={css.eclipse}>
                             <div className={css.eclipseBg}>
-                                <img className={css.tweet__image} src={require(`../../images/${user.avatar}`)} alt={user.name}></img>
+                                <img className={css.tweet__userImage} src={require(`../../images/${user.avatar}`)} alt={user.name}></img>
                             </div>
                         </div>
                         {isUserFollowing(user) ? (
