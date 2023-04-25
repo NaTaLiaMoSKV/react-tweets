@@ -1,12 +1,15 @@
-import { NavLink } from "react-router-dom"
-import TweetCard from "../TweetCard/TweetCard";
+import { Link } from "components/HomePage/Link.styled";
+
+import TweetsList from "components/TweetsList/TweetsList";
 import LoadMore from "components/LoadMore/LoadMore";
+import DropdownList from "components/Dropdown/Dropdown";
 
 export default function TweetsPage() {
     return (
-        <div>
-            <NavLink to="/">back</NavLink>
-            <TweetCard />
+        <div className="page">
+            <Link to="/" style={{ marginLeft: 20 }}>back</Link>
+            <DropdownList />
+            <TweetsList />
             <LoadMore />
         </div>
     )

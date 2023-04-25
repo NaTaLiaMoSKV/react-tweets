@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux'
 import css from './LoadMore.module.css'
 
-import { fetchUsers } from 'redux/users/operations';
+import { fetchMoreUsers } from 'redux/users/operations';
 import { selectIsEnd, selectIsLoading } from 'redux/users/selectors';
 
 export default function LoadMore() {
@@ -10,16 +10,14 @@ export default function LoadMore() {
     const isLoading = useSelector(selectIsLoading);
 
 
-    return isEnd && (
+    return !isEnd && (
         <div className={css.loadMore__container}>
             {
                 isLoading ? <h3 className='loading'>Loading...</h3> :
-                    <button className={css.loadMore__button} onClick={() => dispatch(fetchUsers())}>
+                    <button className={css.loadMore__button} onClick={() => dispatch(fetchMoreUsers())}>
                         Load More
                 </button>
             }
-            
-                
             
         </div>
     )

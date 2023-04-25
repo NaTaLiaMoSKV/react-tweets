@@ -5,14 +5,14 @@ import storage from 'redux-persist/lib/storage'
 export const actionsSlice = createSlice({
     name: 'actions',
     initialState: {
-        followList: []
+        followList: [],
     },
     reducers: {
         followUser(state, action) {
-            state.followList.push(action.payload)
+            state.followList.push(action.payload);
         },
         unfollowUser(state, action) {
-            state.followList = state.followList.filter(item => item.id !== action.payload.id)
+            state.followList = state.followList.filter(item => item.id !== action.payload.id);
         },
     }
 })

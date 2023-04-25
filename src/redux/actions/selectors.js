@@ -1,1 +1,0 @@
-export const selectFollowList = state => state.actions.followList;

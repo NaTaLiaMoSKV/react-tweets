@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 code {
@@ -23,4 +24,14 @@ li {
   line-height: 22px;
   text-transform: uppercase;
   color: #373737;
+}
+
+header {
+  padding: 10px;
+  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.06), 0px -1.71846px 3.43693px #AE7BE3,  0px 3.43693px 2.5777px #FBF8FF;
+}
+
+.page {
+  /* background: rgb(238, 174, 202);
+    background: linear-gradient(359deg, rgba(238, 174, 202, 0.75) 0%, rgba(125, 27, 224, 0.15) 100%); */
 }
