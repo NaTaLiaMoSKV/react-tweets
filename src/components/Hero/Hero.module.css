@@ -1,16 +1,14 @@
 .hero__container {
     display: flex;
-    /* align-items: center; */
-    /* flex-wrap: nowrap; */
     justify-content: space-between;
-
+    
+    width: calc(100% - 100px);
+    height: 400px;
+    margin: 20px auto;
     padding: 20px;
+
     background: linear-gradient(114.99deg, #471CA9 -0.99%, #5736A3 54.28%, #4B2A99 78.99%);
     box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
-    width: calc(100% - 100px);
-    margin: 20px auto;
-    height: 400px;
-
     border-radius: 20px;
 }
 
@@ -21,10 +19,11 @@
 
 .hero__title {
     width: 500px;
+    
     font-family: 'Montserrat';
+    font-weight: 700;
     font-size: 40px;
     line-height: 60px;
-    /* text-align: center; */
     text-transform: uppercase;
     color: #EBD8FF;
 }
@@ -32,11 +31,10 @@
 .hero__subtitle {
     margin-top: 60px;
     width: 560px;
+
     font-family: 'Montserrat';
     font-size: 20px;
     line-height: 30px;
-    /* text-align: center; */
-    /* text-transform: uppercase; */
     color: #EBD8FF;
 }
 

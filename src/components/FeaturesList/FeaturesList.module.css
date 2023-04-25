@@ -1,0 +1,36 @@
+.features {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.features__title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    text-align: center;
+    color: #373737;
+}
+
+.features__list {
+    padding: 0;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.features__item {
+    width: 250px;
+    height: 150px;
+    border: 2px solid #5736A3;
+    border-radius: 15px;
+}
+
+.features__image {
+    margin-left: 100px;
+    margin-top: 20px;
+    height: 50px;
+}
+
+.features__text {
+    margin-bottom: 10px;
+    text-align: center;
+}
