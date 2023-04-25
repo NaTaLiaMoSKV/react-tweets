@@ -1,5 +1,6 @@
 .posts {
-    margin-bottom: 80px;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 .posts__title {
@@ -10,8 +11,8 @@
 }
 
 .posts__list {
-    margin: 30px 60px;
-    /* margin-left: 60px; */
+    /* margin: 0 60px; */
+    margin-left: 60px;
 }
 
 .posts__item {
