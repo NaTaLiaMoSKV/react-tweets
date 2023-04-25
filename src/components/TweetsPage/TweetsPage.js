@@ -1,5 +1,4 @@
-import { Link } from "components/HomePage/Link.styled";
-
+import { Link } from "./Link.styled";
 import TweetsList from "components/TweetsList/TweetsList";
 import LoadMore from "components/LoadMore/LoadMore";
 import DropdownList from "components/Dropdown/Dropdown";

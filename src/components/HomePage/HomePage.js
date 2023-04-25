@@ -1,10 +1,9 @@
-// import { NavLink } from "react-router-dom"
-import { Link } from "./Link.styled"
+import Hero from "components/Hero/Hero"
 
 export default function HomePage() {
     return (
         <div className="page">
-            <Link to="/tweets">to tweets</Link>
+            <Hero />
         </div>
     )
 }
