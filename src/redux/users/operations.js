@@ -19,18 +19,6 @@ export const fetchMoreUsers = createAsyncThunk(
     }
 )
 
-export const fetchAllUsers = createAsyncThunk(
-    'tweets/fetchAll',
-    async(_, thunkAPI) => {
-        try {
-            const res = await axios.get('/users');
-            return res.data;
-        } catch(error) {
-            return thunkAPI.rejectWithValue(error.message);
-        }
-    }
-)
-
 export const fetchUsersByFilter = createAsyncThunk(
     'tweets/fetchByFilter',
     async (filter, thunkAPI) => {

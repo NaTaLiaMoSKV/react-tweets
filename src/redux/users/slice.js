@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit"
 import { persistReducer } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
 
-import { fetchMoreUsers, fetchAllUsers, fetchUsersByFilter } from "./operations";
+import { fetchMoreUsers, fetchUsersByFilter } from "./operations";
 
 export const usersSlice = createSlice({
     name: 'users',
@@ -22,7 +22,6 @@ export const usersSlice = createSlice({
             const currentPage = action.payload.page;
             state.length += currentPage;
             state.usersList.push(...action.payload.data);
-            console.log(state.usersList);
 
             if (state.length < 15) state.isEnd = false;
             else state.isEnd = true;
@@ -33,22 +32,6 @@ export const usersSlice = createSlice({
         [fetchMoreUsers.rejected](state, action) {
             state.isLoading = false;
             state.error = action.payload.data;
-        },
-
-        [fetchAllUsers.pending](state) {
-            state.isLoading = true;
-        },
-        [fetchAllUsers.fulfilled](state, action) {
-            console.log('fetch All!')
-            state.usersList = action.payload;
-            console.log(state.usersList);
-            state.isEnd = true;
-            state.isLoading = false;
-            state.error = null;
-        },
-        [fetchAllUsers.rejected](state, action) {
-            state.isLoading = false;
-            state.error = action.payload;
         },
 
         [fetchUsersByFilter.pending](state) {
@@ -81,5 +64,3 @@ const persistConfig = {
 }
 
 export const usersReducer = persistReducer(persistConfig, usersSlice.reducer);
-
-// export const usersReducer = usersSlice.reducer;
