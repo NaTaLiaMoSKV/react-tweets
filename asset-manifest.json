@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/react-tweets/static/css/main.aea010e4.css",
-    "main.js": "/react-tweets/static/js/main.cc4aa193.js",
+    "main.css": "/react-tweets/static/css/main.3a79df73.css",
+    "main.js": "/react-tweets/static/js/main.3897c263.js",
+    "static/media/example1.jpg": "/react-tweets/static/media/example1.4e2d0867cd4d4395fbba.jpg",
     "static/media/user5.jpg": "/react-tweets/static/media/user5.51eb25405b824c0efa18.jpg",
     "static/media/user6.jpg": "/react-tweets/static/media/user6.95b186c9c77f560dcd38.jpg",
     "static/media/user1.jpg": "/react-tweets/static/media/user1.6b472a0e94a47c5fdbab.jpg",
@@ -9,6 +10,7 @@
     "static/media/user7.jpg": "/react-tweets/static/media/user7.e150f423baed5b372417.jpg",
     "static/media/user9.jpg": "/react-tweets/static/media/user9.11919ee816a8ba614263.jpg",
     "static/media/user4.jpg": "/react-tweets/static/media/user4.9f02bc3988c8f437c3df.jpg",
+    "static/media/example3.jpg": "/react-tweets/static/media/example3.39fd87094527f38a27fb.jpg",
     "static/media/tweet-image.png": "/react-tweets/static/media/tweet-image.032662a2a907475127d7.png",
     "static/media/user13.jpg": "/react-tweets/static/media/user13.b468d859052240fd66eb.jpg",
     "static/media/user11.jpg": "/react-tweets/static/media/user11.15e4c7f2ab5c23b378ea.jpg",
@@ -17,13 +19,14 @@
     "static/media/user15.jpg": "/react-tweets/static/media/user15.a18e4a19a82d59635c16.jpg",
     "static/media/user8.jpg": "/react-tweets/static/media/user8.4dea399ea6ac7bd0c04f.jpg",
     "static/media/user2.jpg": "/react-tweets/static/media/user2.785c2c13ddb521a8fec5.jpg",
+    "static/media/example2.jpg": "/react-tweets/static/media/example2.282dab8d9bc6bc0dc700.jpg",
     "static/media/user10.jpg": "/react-tweets/static/media/user10.f0fd5afc47a00562a0be.jpg",
     "index.html": "/react-tweets/index.html",
-    "main.aea010e4.css.map": "/react-tweets/static/css/main.aea010e4.css.map",
-    "main.cc4aa193.js.map": "/react-tweets/static/js/main.cc4aa193.js.map"
+    "main.3a79df73.css.map": "/react-tweets/static/css/main.3a79df73.css.map",
+    "main.3897c263.js.map": "/react-tweets/static/js/main.3897c263.js.map"
   },
   "entrypoints": [
-    "static/css/main.aea010e4.css",
-    "static/js/main.cc4aa193.js"
+    "static/css/main.3a79df73.css",
+    "static/js/main.3897c263.js"
   ]
 }
