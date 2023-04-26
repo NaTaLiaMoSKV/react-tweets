@@ -14,12 +14,14 @@
 
 
 ![image](https://user-images.githubusercontent.com/110030591/234429975-cba2f94d-5f00-40a7-a739-2dfd5105d70e.png)
+
 ![image](https://user-images.githubusercontent.com/110030591/234430105-43d437c8-88db-43c0-bab3-5d70d39d5199.png)
 
 - src/components/Dropdown - папка для компоненту випадаючого меню та його стилей.
 - src/components/FeaturesList - папка для списку переваг та його стилей.
 - src/components/Footer - папка для футера та його стилей.
-- src/components/Hero - папка для компоненту hero та його стилей. -src/components/HomePage - папка для головної сторінки та її стилей.
+- src/components/Hero - папка для компоненту hero та його стилей.
+- src/components/HomePage - папка для головної сторінки та її стилей.
 - src/components/LoadMore - папка для кнопки "Load More" та його стилей.
 - src/components/Navigation - папка для  навігації.
 - src/components/PostsList - папка для списку тем для постів та його стилей.
@@ -47,4 +49,4 @@
 - Змінюйте код і зберігайте його зміни. Додаток буде автоматично ерезавантажуватися після збереження файлів.
 
 ## Контакти
-Якщо у вас є якісь запитання або пропозиції щодо проекту, зв'яжіться зі мною за адресою nataliamoskv@gmail.com/
+Якщо у вас є якісь запитання або пропозиції щодо проекту, зв'яжіться зі мною за адресою nataliamoskv@gmail.com.
