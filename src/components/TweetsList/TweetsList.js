@@ -4,12 +4,10 @@ import { useEffect } from "react";
 import { selectFilter, selectUsersList } from "../../redux/users/selectors";
 import { selectFollowList } from "redux/actions/slice";
 
-// import { fetchFirst } from "../../redux/users/operations";
 import { fetchUsersByFilter } from "../../redux/users/operations";
 import { followUser, unfollowUser } from "redux/actions/slice";
 
 import css from './TweetsList.module.css'
-
 
 export default function TweetsList() {
     const dispatch = useDispatch();
@@ -116,93 +114,3 @@ export default function TweetsList() {
     )
 
 }
-
-    // return (
-    //     <div className={css.tweets}>
-    //         {filter === "follow" && (
-    //             usersList.filter(user => isUserFollowing(user) === undefined).length < 1 ? <p>Empty follow list</p>
-    //                 : (
-    //                     usersList.map(user => (
-    //                         <li key={user.id} className={css.tweet}>
-    //                             <img className={css.tweet__logo} alt='GoIT' src={require(`../../images/goit-logo.png`)}></img>
-    //                             <img className={css.tweet__contentImage} alt='tweet message' src={require(`../../images/tweet-image.png`)}></img>
-    //                             <div className={css.rect}></div>
-                        
-    //                             <div className={css.eclipse}>
-    //                                 <div className={css.eclipseBg}>
-    //                                     <img className={css.tweet__userImage} src={require(`../../images/${user.avatar}`)} alt={user.name}></img>
-    //                                 </div>
-    //                             </div>
-    //                             <div className={css.tweet__data}>
-    //                                 <p className={css.tweet__text}>{user.tweets} tweets</p>
-    //                                 <p className={css.tweet__text}> {formatNumber(user.followers)} followers</p>
-    //                                 <button className={css.tweet__button} onClick={() => dispatch(followUser(user))}>Follow</button>
-    //                             </div>
-    //                         </li>
-    //                     )
-    //                     )
-    //                 )
-    //         )
-    //         }
-    //         {filter === "followings" && (
-    //             usersList.filter(user => isUserFollowing(user) !== undefined).length < 1 ? <p>Empty followings list</p>
-    //                 : (
-    //                     usersList.map(user => (
-    //                         <li key={user.id} className={css.tweet}>
-    //                             <img className={css.tweet__logo} alt='GoIT' src={require(`../../images/goit-logo.png`)}></img>
-    //                             <img className={css.tweet__contentImage} alt='tweet message' src={require(`../../images/tweet-image.png`)}></img>
-    //                             <div className={css.rect}></div>
-                        
-    //                             <div className={css.eclipse}>
-    //                                 <div className={css.eclipseBg}>
-    //                                     <img className={css.tweet__userImage} src={require(`../../images/${user.avatar}`)} alt={user.name}></img>
-    //                                 </div>
-    //                             </div>
-    //                             <div className={css.tweet__data}>
-    //                                 <p className={css.tweet__text}>{user.tweets} tweets</p>
-    //                                 <p className={css.tweet__text}> {formatNumber(user.followers + 1)} followers</p>
-    //                                 <button className={css.tweet__activeButton} onClick={() => dispatch(unfollowUser(user))}>Following</button>
-    //                             </div>
-    //                         </li>
-    //                     )
-    //                     )
-    //                 )
-    //         )
-    //         }
-             
-                
-
-    //         {filter === "all" && 
-    //             usersList.map(
-    //                 user => (
-    //                     <li key={user.id} className={css.tweet}>
-    //                         <img className={css.tweet__logo} alt='GoIT' src={require(`../../images/goit-logo.png`)}></img>
-    //                         <img className={css.tweet__contentImage} alt='tweet message' src={require(`../../images/tweet-image.png`)}></img>
-    //                         <div className={css.rect}></div>
-                            
-    //                         <div className={css.eclipse}>
-    //                             <div className={css.eclipseBg}>
-    //                                 <img className={css.tweet__userImage} src={require(`../../images/${user.avatar}`)} alt={user.name}></img>
-    //                             </div>
-    //                         </div>
-    //                         {isUserFollowing(user) ? (
-    //                             <div className={css.tweet__data}>
-    //                                 <p className={css.tweet__text}>{user.tweets} tweets</p>
-    //                                 <p className={css.tweet__text}> { formatNumber(user.followers + 1) } followers</p>
-    //                                 <button className={css.tweet__activeButton} onClick={() => dispatch(unfollowUser(user))}>Following</button>
-    //                             </div>
-    //                             ) : (
-    //                                 <div className={css.tweet__data}>
-    //                                 <p className={css.tweet__text}>{user.tweets} tweets</p>
-    //                                 <p className={css.tweet__text}> { formatNumber(user.followers) } followers</p>
-    //                                 <button className={css.tweet__button} onClick={() => dispatch(followUser(user))}>Follow</button>
-    //                             </div>
-    //                             )
-    //                         }
-    //                     </li>
-    //                 )
-    //             )
-    //         }
-
-    //     </div>
-    // )
