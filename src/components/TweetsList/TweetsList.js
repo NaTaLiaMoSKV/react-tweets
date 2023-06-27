@@ -48,7 +48,7 @@ export default function TweetsList() {
                         
                         <div className={css.eclipse}>
                             <div className={css.eclipseBg}>
-                                <img className={css.tweet__userImage} src={require(`../../images/${user.avatar}`)} alt={user.name}></img>
+                                <img className={css.tweet__userImage} src={require(`../../images/user${user.id}.jpg`)} alt={user.name}></img>
                             </div>
                         </div>
                         <div className={css.tweet__data}>
@@ -70,7 +70,7 @@ export default function TweetsList() {
                         
                         <div className={css.eclipse}>
                             <div className={css.eclipseBg}>
-                                <img className={css.tweet__userImage} src={require(`../../images/${user.avatar}`)} alt={user.name}></img>
+                                <img className={css.tweet__userImage} src={require(`../../images/user${user.id}.jpg`)} alt={user.name}></img>
                             </div>
                         </div>
                         <div className={css.tweet__data}>
@@ -90,7 +90,7 @@ export default function TweetsList() {
                         
                         <div className={css.eclipse}>
                             <div className={css.eclipseBg}>
-                                <img className={css.tweet__userImage} src={require(`../../images/${user.avatar}`)} alt={user.name}></img>
+                                <img className={css.tweet__userImage} src={require(`../../images/user${user.id}.jpg`)} alt={user.name}></img>
                             </div>
                         </div>
                         {isUserFollowing(user) ? (

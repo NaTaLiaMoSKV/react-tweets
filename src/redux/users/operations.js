@@ -1,7 +1,7 @@
 import axios from "axios";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 
-axios.defaults.baseURL = 'https://64465d06ee791e1e29fd08ab.mockapi.io';
+axios.defaults.baseURL = 'https://649a967bbf7c145d0239124c.mockapi.io';
 
 let page = 1;
 
